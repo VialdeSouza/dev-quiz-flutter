@@ -14,7 +14,15 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarWidget(),
-      body: LevelButtonWidget(label: "Médio",),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          LevelButtonWidget(label: 'Fácil'),
+          LevelButtonWidget(label: 'Médio'),
+          LevelButtonWidget(label: 'Difícil'),
+          LevelButtonWidget(label: 'Perito'),
+        ],
+      ),
     );
   }
 }
