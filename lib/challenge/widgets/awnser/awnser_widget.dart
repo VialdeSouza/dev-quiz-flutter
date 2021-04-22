@@ -10,7 +10,7 @@ class AwnserWidget extends StatelessWidget {
     Key? key,
     required this.title,
     this.isRight = false,
-    this.isSelected = true,
+    this.isSelected = false,
   }) : super(key: key);
 
   Color get _selectedColorRight =>
