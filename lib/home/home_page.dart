@@ -39,8 +39,9 @@ class _HomePageState extends State<HomePage> {
               SizedBox(height: 24),
               Container(
                 height: 30,
-                child: ListView(
-                  scrollDirection: Axis.horizontal,
+                child: Row(
+               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  
                   children: [
                     LevelButtonWidget(
                       label: "Fácil",
@@ -70,6 +71,7 @@ class _HomePageState extends State<HomePage> {
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) => ChallengePage(
+                                    title: e.title,
                                     questions: e.questions,
                                   ),
                                 ),
